@@ -1,5 +1,5 @@
 <p align="center">
-   <img width="150" height="150" src="https://i.ibb.co/gwJjVDv/banner.png" />
+   <img width="150" height="150" src="https://i.ibb.co/MnVpyfF/logo.png" />
 </p>
 
 # vue-shell
