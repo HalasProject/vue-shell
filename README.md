@@ -56,16 +56,16 @@ export default {
         subHeader: "Shell is power just enjoy 🔥",
         helpHeader: 'Enter "help" for more information.',
         emoji: {
-          first: "🔅",
-          second: "🔆",
-          time: 750
+            first: "🔅",
+            second: "🔆",
+            time: 750
         },
         sign: "VueShell $",
         img: {
-          align: "left",
-          link: "/mylogo.png",
-          width: 100,
-          height: 100
+            align: "left",
+            link: "/mylogo.png",
+            width: 100,
+            height: 100
         }
       },
       commands: [
@@ -120,14 +120,14 @@ export default {
 	helpHeader: String,
 	sign: String,
 	img: {
-   		align: left | right,
+   		align: "left" | "right",
   		link: String,
     	width: Number,
     	height: Number }
 	emoji: {
-    	first: "🔅",
-    	second: "🔆",
-    	time: Number (ms) }
+        first: "🔅",
+        second: "🔆",
+        time: Number (ms) }
 }
 ```
 
