@@ -1,3 +1,7 @@
+<p align="center">
+   <img width="150" height="150" src="https://i.ibb.co/gwJjVDv/banner.png" />
+</p>
+
 # vue-shell
 
 ## What is this ?
