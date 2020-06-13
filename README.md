@@ -113,15 +113,17 @@ export default {
 | commands    | Array  | false    |
 | shell_input | String | false    |
 
+------
+
 | Event        | Type | Required |
-| ------------ | ---- | -------- |
+| :----------- | ---- | -------- |
 | shell_output | Any  | false    |
 
 #### banner 
 
 ```js
 {
-    header: String,
+  header: String,
 	subHeader: String,
 	helpHeader: String,
 	sign: String,
@@ -129,7 +131,7 @@ export default {
    		align: "left" | "right",
   		link: String,
     	width: Number,
-    	height: Number }
+    	height: Number },
 	emoji: {
         first: "🔅",
         second: "🔆",
@@ -147,5 +149,35 @@ export default {
     }
   }
 ]
+```
+
+#### output
+
+```js
+<template>
+	<v-shell @shell_output="prompt" :shell_input="send_to_terminal"></v-shell>
+</template>
+
+<script>
+export default {
+	data(){
+    	return{
+        	send_to_terminal:''
+   		}
+	},
+  	methods:{
+  		prompt(val){
+  			if (val == "ifconfig"){
+            	// Do somthing ... then send the data to shell
+            	 this.send_to_terminal = data
+        	} else {
+                // Else send error message in output of shell
+				 this.send_to_terminal = `
+					'${val}' is not recognized as an 														internal command or external, an executable program or a batch file.`
+        	}
+  		}
+  	}
+}
+</script>
 ```
 
