@@ -4,6 +4,10 @@
   "author": "Salah Bentayeb",
   "description": "Simulate a terminal shell components with Vue",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HalasProject/vue-shell.git"
+  },
   "main": "./src/index.js",
   "keywords": [
     "vueshell",
