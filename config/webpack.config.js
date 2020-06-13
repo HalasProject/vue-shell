@@ -7,6 +7,11 @@ module.exports = {
     path: path.resolve(__dirname + './../dist'),
     filename: 'v-shell.js'
   },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, 'src/assets'),
+    }
+  },
   module: {
     rules: [{
         test: /\.js$/,

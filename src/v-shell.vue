@@ -6,7 +6,7 @@
           <img
             v-if="banner.img"
             :align="banner.img.align ? banner.img.align : 'left'"
-            :src="banner.img.link ? banner.img.link : '../assets/logo.png'"
+            :src="banner.img.link ? banner.img.link : '@/logo.png'"
             :width="banner.img.width ? banner.img.width : '100px'"
             :height="banner.img.height ? banner.img.height : '100px'"
           />
@@ -61,7 +61,7 @@ export default {
           sign: "VueShell $",
           img: {
             align: "left",
-            link: `../assets/logo.png`,
+            link: `@/logo.png`,
             width: 100,
             height: 100
           }
