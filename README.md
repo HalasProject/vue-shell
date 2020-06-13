@@ -15,8 +15,19 @@
 vue-shell is a component vuejs to provides an easy way to create a terminal on your application and then add your own philosophy by adding all the commands you want with their rendering in the output.
 
 - Navigate the history with **key-up** | **key-down**
+
 - Clean the current terminal with **clear**
+
 - Browse all your commands with **help**
+
+  
+
+## Open in CodeSandBox
+
+<p align="center">
+    <a href="https://codesandbox.io/s/vue-shell-012vo?file=/src/App.vue">
+       <img width="150" height="170" src="https://seeklogo.com/images/C/code-sandbox-logo-0746E97CA1-seeklogo.com.png" /></a>
+</p>
 
 ## Installation 
 
@@ -47,7 +58,7 @@ Vue.use(shell);
       :banner="banner"
       :shell_input="send_to_terminal"
       :commands="commands"
-      @shell_output="prompt()"
+      @shell_output="prompt"
     ></v-shell>
   </div>
 </template>
@@ -169,10 +180,10 @@ export default {
   		prompt(val){
   			if (val == "ifconfig"){
             	// Do somthing ... then send the data to shell
-            	 this.send_to_terminal = data
+            	this.send_to_terminal = data
         	} else {
                 // Else send error message in output of shell
-				        this.send_to_terminal = `'${val}' is not recognized as an internal command or external, an executable program or a batch file`
+				      this.send_to_terminal = `'${val}' is not recognized as an internal command or external, an executable program or a batch file`
         	}
   		}
   	}
