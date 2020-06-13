@@ -5,7 +5,7 @@
 # vue-shell
 
 <p align="center">
-   <img src="https://ibb.co/rGJ9v1T" />
+   <img src="https://i.ibb.co/vx89DKg/vue-shell.gif" />
 </p>
 
 
