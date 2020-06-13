@@ -172,8 +172,7 @@ export default {
             	 this.send_to_terminal = data
         	} else {
                 // Else send error message in output of shell
-				 this.send_to_terminal = `
-					'${val}' is not recognized as an 														internal command or external, an executable program or a batch file.`
+				        this.send_to_terminal = `'${val}' is not recognized as an internal command or external, an executable program or a batch file`
         	}
   		}
   	}
