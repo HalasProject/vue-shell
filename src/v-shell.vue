@@ -96,6 +96,7 @@ export default {
   watch: {
     shell_input(val) {
       this.output(val);
+      this.$parent.send_to_terminal = ""
     }
   },
   methods: {
