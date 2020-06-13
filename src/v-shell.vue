@@ -96,7 +96,7 @@ export default {
   watch: {
     shell_input(val) {
       this.output(val);
-      this.$parent.send_to_terminal = ""
+      this.$parent.send_to_terminal = "";
     }
   },
   methods: {
@@ -175,7 +175,9 @@ export default {
             }
           });
         }
-        this.$emit("shell_output", this.value);
+        if (this.value.trim() != "") {
+          this.$emit("shell_output", this.value);
+        }
         this.value = "";
       }
 
