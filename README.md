@@ -4,6 +4,12 @@
 
 # vue-shell
 
+<p align="center">
+   <img src="https://ibb.co/rGJ9v1T" />
+</p>
+
+
+
 ## What is this ?
 
 vue-shell is a component vuejs to provides an easy way to create bash terminal on your application and then add your own philosophy by adding all the commands you want with their rendering in the output.
