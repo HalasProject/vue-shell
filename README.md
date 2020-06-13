@@ -25,7 +25,7 @@ vue-shell is a component vuejs to provides an easy way to create a terminal on y
 ## Open in CodeSandBox
 
 <p align="center">
-    <a href="https://codesandbox.io/s/vue-shell-012vo?file=/src/App.vue">
+    <a  target="_blank" href="https://codesandbox.io/s/vue-shell-012vo?file=/src/App.vue">
        <img width="150" height="170" src="https://seeklogo.com/images/C/code-sandbox-logo-0746E97CA1-seeklogo.com.png" /></a>
 </p>
 
