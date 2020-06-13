@@ -4,6 +4,7 @@
   "author": "Salah Bentayeb",
   "description": "Simulate a terminal shell components with Vue",
   "license": "MIT",
+  "main": "./src/index.js",
   "keywords": [
     "vueshell",
     "terminal",
