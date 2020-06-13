@@ -2,6 +2,7 @@
   "name": "vue-shell",
   "version": "1.0.0",
   "author": "Salah Bentayeb",
+  "description": "Simulate a terminal shell components with Vue",
   "license": "MIT",
   "keywords": [
     "vueshell",
@@ -12,7 +13,7 @@
     "vuejs terminal",
     "vue shell"
   ],
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
