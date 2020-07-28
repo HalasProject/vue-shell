@@ -83,10 +83,14 @@ export default {
   },
   computed: {
     allcommands() {
-      var tab = ["help", "clear"];
+      var tab = [
+        { name: "help", desc: "Show all the commands that are available" },
+        { name: "clear", desc: "Clear the terminal of all output" },
+      ];
+
       if (this.commands) {
-        this.commands.forEach(a => {
-          tab.push(a.name);
+        this.commands.forEach(({ name, desc }) => {
+          tab.push({ name, desc });
         });
       }
 
@@ -163,8 +167,16 @@ export default {
         this.$refs.output.innerHTML = "";
         this.value = "";
       } else if (cmd == "help") {
+        var commandsList = this.allcommands.map(({ name, desc}) => {
+          if (desc) {
+            return `${name}: ${desc}`;
+          }
+
+          return name;
+        });
+
         this.output(
-          '<div class="ls-files">' + this.allcommands.join("<br>") + "</div>"
+            '<div class="ls-files">' + commandsList.join("<br>") + "</div>"
         );
       } else {
         if (this.commands) {

@@ -87,12 +87,14 @@ export default {
       },
       commands: [
         { name: "info",
+          desc: "Show information about this terminal",
           get() {
             return `<p>With ❤️ By Salah Bentayeb @halasproject.</p>`;
         }
         },
         {
           name: "uname",
+          desc: "Show the current terminal name",
           get() {
             return navigator.appVersion;
           }
@@ -155,6 +157,7 @@ export default {
 ```javascript
 [
   { name: String,
+    desc: String,
     get() {
        return String | HTML;
     }
